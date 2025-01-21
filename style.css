@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 
 * {
@@ -20,7 +22,12 @@ body {
     --paragraph-color:#808080;
 }
 .paragraph-color {
-    color: #808080;
+    color: #808080;  
+}
+.primary-paragraph {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Raleway", serif;
 }
 ul li {
     list-style: none;
@@ -39,10 +46,10 @@ a {
     border-radius: 12px;
     border: none;
 }
-
 .container {
     margin: 0 140px;
 }
+
 
 
 /*========================================*/
@@ -122,6 +129,78 @@ nav ul li:nth-child(2) a {
 
 
 
+.standard-curriculum {
+    text-align: center;
+    padding: 60PX 0;
+}
+.standard-curriculum .standard-curriculum-title {
+    font-size: 46px;
+    font-weight: 600;
+}
+.standard-curriculum-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin:  80PX 0;
+    gap: 30px;
+}
+.standard-curriculum-card {
+    display: grid;
+    gap: 35px;
+    padding: 52px 40px;
+    text-align: justify;
+    max-width: 410px;
+    border: 1px solid black;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 28px;
+    margin: auto;
+}
+.standard-curriculum-card img {
+    margin: 0 auto;
+}
+.standard-curriculum-card:nth-child(1) {
+    background: linear-gradient(#FFF4DC 10%, white 40%);
+    border: 1px solid #FFF4DC;
+}
+.standard-curriculum-card:nth-child(1) a {
+    color: #64C8FF;
+}
+.standard-curriculum-card:nth-child(2) {
+    background: linear-gradient(#DEF5FF 10%, white 40%);
+    border: 1px solid #DEF5FF;
+}
+.standard-curriculum-card:nth-child(2) a {
+    color: #F0AA00;
+}
+.standard-curriculum-card:nth-child(3) {
+    background: linear-gradient(#F2E8FF 10%, white 40%);
+    border: 1px solid #F2E8FF;
+}
+.standard-curriculum-card:nth-child(3) a {
+    color: #8700FF;
+}
+.arrow-box ul {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.arrow-box ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.arrow-box i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #FEA301;
+    width: 80px;
+    height: 80px;
+    font-size: 22px;
+    border-radius: 50%;
+}
+
 
 
 
@@ -187,4 +266,32 @@ nav ul li:nth-child(2) a {
         display: grid;
         margin: 0px auto;
     }
+    .standard-curriculum-title {
+        font-size: 26px;
+        font-weight: 600;
+    }
+    .standard-curriculum-cards {
+        grid-template-columns: repeat(1,3fr);
+        gap: 22px;
+    }
+    .standard-curriculum-card {
+        padding: 36px 28px;
+    }
+    .box-title {
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .box-description {
+        font-size: 11px;
+        font-weight: 500;
+        line-height: 20px;
+    }
+    .standard-curriculum-card a {
+        font-size: 11px;
+        font-weight: 600;
+    }
+    .arrow-box {
+        display: none;
+    }
+    
 }
