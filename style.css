@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: url(assets/bg.png);
+    background-repeat: no-repeat;
+    background-position: top bottom;
+    font-family: "Quicksand", serif;
+}
+
+
+:root {
+    --primary-color:#FEA301;
+    --secondary-color:#01ACFD;
+    --paragraph-color:#808080;
+}
+.paragraph-color {
+    color: #808080;
+}
+ul li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+.primary-btn {
+    color: #fff;
+    padding: 10px 60px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #FEA301;
+    border-radius: 12px;
+    border: none;
+}
+
+.container {
+    margin: 0 140px;
+}
+
+
+/*========================================*/
+/*==========Header section start==========*/
+/*========================================*/
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 140px;
+}
+ .header-logo {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+ }
+ .header-logo h2 {
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+nav ul {
+    display: flex;
+    gap: 32px;
+}
+nav ul li:first-child a {
+    color: var(--primary-color);
+}nav ul li:nth-child(2) a {
+    color: var(--secondary-color);
+}
+nav ul li:nth-child(3) a {
+    color: #05D4DF;
+}
+nav ul li:nth-child(2) a {
+    color: #5D58EF;
+}
+.fa-bars {
+    visibility: hidden;   
+}
+
+
+/*========Banner section start=============*/
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner-content {
+    max-width:650px;
+    align-items: center;
+    justify-content: center;
+}
+.banner-title {
+    font-size: 56px;
+    font-weight: 600;
+}
+.banner-description {
+    font-size: 20px;
+    padding: 24px 0;
+}
+.banner-content button {
+    background-color: #111111;
+}
+.banner-logo img {
+    width: 100%;
+}
+
+/*========Banner section end=============*/
+
+
+/*========================================*/
+/*========= Header section end ===========*/
+/*========================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media  screen and (max-width:576px) {
+    .container {
+        margin: 0 20px;
+    }
+    .primary-btn {
+        font-size: 16px;
+        padding: 6px 24px;
+        font-weight: normal;
+    }
+    .header-title h2 {
+        display: none;
+    }
+    .navbar {
+        border-bottom: 1px solid #FEA301;
+        padding: 15px 20px;
+        justify-content: space-between;
+        margin: 0;
+    }
+    nav {
+        display: none;
+    }
+    .header-btn .primary-btn {
+        display: none;
+    }
+     .fa-bars {
+        visibility: visible;
+        font-size: 30px;
+     }
+    .banner {
+        flex-direction: column-reverse;
+        gap: 20px;
+        padding: 20px 0;
+    }
+    .banner-content {
+        text-align: center;
+    }
+    .banner-content .banner-title {
+        font-size: 32px;
+        font-weight: 600;
+    }
+    .banner-content .banner-description {
+        font-size: 14px;
+    }
+    .banner-logo img {
+        width: 90%;
+        display: grid;
+        margin: 0px auto;
+    }
+}
