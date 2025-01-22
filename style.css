@@ -10,8 +10,8 @@
 }
 body {
     background: url(assets/bg.png);
-    background-repeat: no-repeat;
-    background-position: top bottom;
+    background-repeat: repeat;
+    background-position: left bottom;
     font-family: "Quicksand", serif;
 }
 
@@ -42,7 +42,7 @@ a {
     padding: 10px 60px;
     font-size: 20px;
     font-weight: 600;
-    background-color: #FEA301;
+    background-color: #f39a02;
     border-radius: 12px;
     border: none;
 }
@@ -56,12 +56,18 @@ a {
 /*==========Header section start==========*/
 /*========================================*/
 
+marquee {
+    background-color: orange;
+    color: #fff;
+    font-size: 25px;
+    padding: 10px 0;
+}
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 140px;
+    margin: 20px 140px;
 }
  .header-logo {
     display: flex;
@@ -206,8 +212,8 @@ nav ul li:nth-child(2) a {
 /*==========Our Stories section start==============*/
 
 .our-stories {
-    background: linear-gradient(red 80%, #FEA301 100%);
-    padding: 60px 0;
+    background: linear-gradient(#fff 0%, #fea10153 100%);
+    padding: 60px 80px;
     display: grid;
     gap: 80px;
 }
@@ -221,6 +227,7 @@ nav ul li:nth-child(2) a {
 }
 .our-stories img {
     border-radius: 16px 16px 0 0;
+    width: 100%;
 }
 .our-stories-cards {
     display: flex;
@@ -234,6 +241,7 @@ nav ul li:nth-child(2) a {
 }
 .big-card {
     max-width: 540px;
+    /* width: 35%; */
     height: 630px;
     background-color: #fff;
 }
@@ -251,7 +259,7 @@ nav ul li:nth-child(2) a {
     color: #666666;
 }
 .small-card {
-    max-width: 390px;
+    max-width: 290px;
     height: 300px;
     background-color: #fff;
 }
@@ -265,10 +273,11 @@ nav ul li:nth-child(2) a {
     height: 48px;
     border-radius: 48px;
     position: relative;
-    top: -31px;
+    top: -25px;
     left: 58px;
 }
 .small-card .date {
+    background-color: #95B226;
     left: 38px;
     padding: 10px 20px;
     font-size: 14px;
@@ -281,6 +290,72 @@ nav ul li:nth-child(2) a {
 }
 
 
+/*==============Footer section start===============*/
+
+.footer {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #01ACFD;
+}
+.footer-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    width: 1070px;
+    height: 519px;
+    gap: 210px;
+    margin-top: 120px;
+}
+
+.kids-education-content {
+    display: flex;
+    gap: 15px;
+}
+.kids-education-title {
+    font-size: 42px;
+    font-weight: 600;
+}
+.kids-education-description {
+    font-size: 20px;
+    margin-top: 35px;
+}
+.about-school-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 32px;
+}
+.about-school ul li {
+    margin-bottom: 20px;
+}
+.about-school ul a {
+    color: #fff;
+}
+.keep-in-touch-title {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 32px;
+}
+.keep-in-touch ul li {
+    width: 40px;
+    height: 40px;
+}
+.keep-in-touch ul {
+    display: flex;
+    gap: 10px;
+}
+.keep-in-touch ul li:first-child {
+    background: url(assets/fb.png);
+}
+.keep-in-touch ul li:nth-child(2) {
+    background: url(assets/dribble.png);
+}
+.keep-in-touch ul li:nth-child(3) {
+    background: url(assets/twitter.png);
+}
+.keep-in-touch ul li:nth-child(4) {
+    background: url(assets/google+.png);
+}
 
 
 
@@ -306,6 +381,12 @@ nav ul li:nth-child(2) a {
         padding: 6px 24px;
         font-weight: normal;
     }
+
+    /*=============================================*/
+    /*========= Header section start ==============*/
+    /*=============================================*/
+
+    /*=========Navbar start================*/
     .header-title h2 {
         display: none;
     }
@@ -321,10 +402,13 @@ nav ul li:nth-child(2) a {
     .header-btn .primary-btn {
         display: none;
     }
-     .fa-bars {
+    .fa-bars {
         visibility: visible;
         font-size: 30px;
-     }
+    }
+
+    /*=========Banner section start===========*/
+
     .banner {
         flex-direction: column-reverse;
         gap: 20px;
@@ -345,9 +429,26 @@ nav ul li:nth-child(2) a {
         display: grid;
         margin: 0px auto;
     }
+
+
+    /*=============================================*/
+    /*========= Header section End ================*/
+    /*=============================================*/
+
+
+    /*=============================================*/
+    /*=========== Main section start ==============*/
+    /*=============================================*/
+
+
+    /*========= standard-curriculum section start ==========*/
+
     .standard-curriculum-title {
         font-size: 26px;
         font-weight: 600;
+    }
+    .standard-curriculum {
+        padding: 60px 0 0 0;
     }
     .standard-curriculum-cards {
         grid-template-columns: repeat(1,3fr);
@@ -372,5 +473,87 @@ nav ul li:nth-child(2) a {
     .arrow-box {
         display: none;
     }
+
+    /*=======Our stories start==========*/
+
+    .our-stories {
+        gap: 20px;
+        padding: 0 0 60px 0;
+    }
+    .our-stories-title {
+        font-size: 26px;
+        font-weight: 600;
+    }
+    .big-card {
+        display: none;
+    }
+    .smalls-cards {
+        gap: 12px;
+    }
+    .small-card {
+        max-width: 175px;
+        height: 180px;
+    }
+    .small-card img {
+        width: 100%;
+    }
+    .date {
+        width: 104px;
+        height: 23px;
+        margin-bottom: -13px;
+        font-weight: 500;
+    }
+    .date p {
+        font-size: 9px;
+        font-weight: 500;
+    }
+    .small-card .date {
+        left: 22px;
+        padding: 13px 11px;
+    }
+    .small-card-title {
+        font-size: 9px;
+        font-weight: 600;
+        padding: 0 42px 19px 22px;
+    }
+
+    /*=============================================*/
+    /*=========== Main section end ================*/
+    /*=============================================*/
+
+    /*============Footer section start==========*/
+
+    .footer-section {
+        grid-template-columns: repeat(1, 3fr);
+        max-width: 357px;
+        height: 642px;
+        padding: 60px 0;
+        margin-top: 0;
+        gap: 32px;
+    }
+    .kids-education-title {
+        font-size: 35px;
+        font-weight: 600;
+    }
+    .kids-education-description {
+        margin-top: 22px;
+        font-size: 16px;
+    }
+    .about-school-title {
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .footer-navbar a {
+        font-size: 17px;
+        font-weight: 500;
+    }
+    .about-school ul li {
+        margin-bottom: 17px;
+    }
+    .keep-in-touch-title {
+        font-size: 22px;
+        font-weight: 600;
+    }
+    
     
 }
